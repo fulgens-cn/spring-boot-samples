@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <h1>系统异常统一处理</h1>
+        <h3 th:text="'请求地址：'+${path}"></h3>
+        <h3 th:text="'错误信息：'+${message}"></h3>
+    </div>
+</body>
+</html>

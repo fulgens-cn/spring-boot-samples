@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-boot-sample-web-static
+  resources:
+    # 指定静态资源位置（也可写成一行以,分割）
+    static-locations:
+      - classpath:/META-INF/resources/
+      - classpath:/resources/
+      - classpath:/static/
+      - classpath:/public/
+  mvc:
+    # 静态资源映射路径
+    static-path-pattern: /**

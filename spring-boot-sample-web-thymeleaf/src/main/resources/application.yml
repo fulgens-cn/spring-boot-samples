@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-boot-sample-web-thymeleaf
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    servlet:
+      content-type: text/html
+  messages:
+    # 指定国际化信息源基本名称默认messages
+    basename: i18n.messages
+    # 指定国际化信息源编码默认UTF-8
+    encoding: UTF-8

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-boot-sample-web-errorhandling
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    servlet:
+      content-type: text/html

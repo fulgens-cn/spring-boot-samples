@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-boot-sample-data-jdbc
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_db?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    username: root
+    password: mysql123
+    # 运行schema-*.sql data-*.sql
+    initialization-mode: always

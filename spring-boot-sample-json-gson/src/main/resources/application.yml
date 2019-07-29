@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-boot-sample-json-gson
+  gson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  # 无法排除jackson依赖时优先使用gson
+  # http:
+    # converters:
+      # preferred-json-mapper: gson

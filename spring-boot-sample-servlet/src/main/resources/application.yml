@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-boot-sample-servlet
+server:
+  servlet:
+    context-path: /
+    session:
+      persistent: false
+      timeout: 30m
+  error:
+    path: /error
+    include-exception: false
+    include-stacktrace: never
+  # tomcat:
+    # max-threads: 200
+    # max-connections: 10000

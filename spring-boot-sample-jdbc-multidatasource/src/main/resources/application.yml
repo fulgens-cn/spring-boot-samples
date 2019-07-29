@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: spring-boot-sample-jdbc-multidatasource
+# 对数据源配置方案一
+#app:
+#  datasource:
+#    first:
+#      jdbc-url: jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+#      username: root
+#      password: mysql123
+#    second:
+#      jdbc-url: jdbc:mysql://localhost:3306/test2?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+#      username: root
+#      password: mysql123
+# 对数据源配置方案二
+app:
+  datasource:
+    first:
+      url: jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+      username: root
+      password: mysql123
+      configuration:
+        # 连接池名
+        pool-name: HikariCP1
+        # 最小空闲连接数量 Default: same as maximumPoolSize
+        minimum-idle: 5
+        # 空闲连接存活最大时间 Default: 600000 (10 minutes)
+        idle-timeout: 600000
+        # 连接池最大连接数 Default: 10
+        maximum-pool-size: 200
+        # 连接最长存活时间 Default: 1800000 (30 minutes)
+        max-lifetime: 1800000
+        # 连接超时时间 Default: 30000 (30 seconds)
+        connection-timeout: 3000
+    second:
+      url: jdbc:mysql://localhost:3306/test2?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+      username: root
+      password: mysql123
+      configuration:
+          pool-name: HikariCP2
+          minimum-idle: 5
+          idle-timeout: 180000
+          maximum-pool-size: 200
+          max-lifetime: 1800000
+          connection-timeout: 3000

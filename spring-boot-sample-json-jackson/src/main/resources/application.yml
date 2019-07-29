@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: spring-boot-sample-json-jackson
+  # jackson:
+    # serialization:
+      # write-dates-as-timestamps: false
+    # date-format: yyyy-MM-dd HH:mm:ss

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: spring-boot-sample-web-jsp
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp

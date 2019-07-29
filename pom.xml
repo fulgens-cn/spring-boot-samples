@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+    </parent>
+
+    <name>Spring Boot Samples</name>
+    <description>Spring Boot Samples</description>
+    <groupId>com.example</groupId>
+    <artifactId>spring-boot-samples</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <modules>
+        <module>spring-boot-sample-simple</module>
+        <module>spring-boot-sample-logback</module>
+        <module>spring-boot-sample-log4j2</module>
+        <module>spring-boot-sample-web-static</module>
+        <module>spring-boot-sample-web-thymeleaf</module>
+        <module>spring-boot-sample-web-freemarker</module>
+        <module>spring-boot-sample-web-jsp</module>
+        <module>spring-boot-sample-web-xml</module>
+        <module>spring-boot-sample-json-jackson</module>
+        <module>spring-boot-sample-json-gson</module>
+        <module>spring-boot-sample-json-fastjson</module>
+        <module>spring-boot-sample-servlet</module>
+        <module>spring-boot-sample-jetty</module>
+        <module>spring-boot-sample-undertow</module>
+        <module>spring-boot-sample-web-errorhandling</module>
+        <module>spring-boot-sample-web-errorhandling</module>
+        <module>spring-boot-sample-web-errorhandling</module>
+        <module>spring-boot-sample-devtools</module>
+        <module>spring-boot-sample-data-jdbc</module>
+        <module>spring-boot-sample-jdbc</module>
+        <module>spring-boot-sample-jdbc-multidatasource</module>
+    </modules>
+</project>
