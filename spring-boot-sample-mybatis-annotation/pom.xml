@@ -10,11 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>spring-boot-sample-mybatis</artifactId>
+    <artifactId>spring-boot-sample-mybatis-annotation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Spring Boot Mybatis Sample</name>
-    <description>Spring Boot Mybatis Sample</description>
+    <name>Spring Boot Mybatis Annotation Sample</name>
+    <description>Spring Boot Mybatis Annotation Sample</description>
 
     <properties>
         <java.version>1.8</java.version>

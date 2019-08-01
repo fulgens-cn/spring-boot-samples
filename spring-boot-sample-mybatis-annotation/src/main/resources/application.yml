@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-boot-sample-mybatis-annotation
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    username: root
+    password: mysql123
+    initialization-mode: never
+mybatis:
+  # 别名包
+  type-aliases-package: com.example.mybatis.entity
+  configuration:
+    # 驼峰命名
+    map-underscore-to-camel-case: true
+# mybatis sql日志
+logging:
+  level:
+    com:
+      example:
+        mybatis:
+          mapper: debug

@@ -39,5 +39,6 @@
         <module>spring-boot-sample-jdbc</module>
         <module>spring-boot-sample-jdbc-multidatasource</module>
         <module>spring-boot-sample-mybatis</module>
+        <module>spring-boot-sample-mybatis-annotation</module>
     </modules>
 </project>
