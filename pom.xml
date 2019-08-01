@@ -34,11 +34,10 @@
         <module>spring-boot-sample-jetty</module>
         <module>spring-boot-sample-undertow</module>
         <module>spring-boot-sample-web-errorhandling</module>
-        <module>spring-boot-sample-web-errorhandling</module>
-        <module>spring-boot-sample-web-errorhandling</module>
         <module>spring-boot-sample-devtools</module>
         <module>spring-boot-sample-data-jdbc</module>
         <module>spring-boot-sample-jdbc</module>
         <module>spring-boot-sample-jdbc-multidatasource</module>
+        <module>spring-boot-sample-mybatis</module>
     </modules>
 </project>
