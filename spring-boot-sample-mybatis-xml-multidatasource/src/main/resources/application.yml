@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-boot-sample-jdbc-multidatasource
+    name: spring-boot-sample-mybatis-xml-multidatasource
 # 多数据源配置方案一
 #app:
 #  datasource:
@@ -37,9 +37,19 @@ app:
       username: root
       password: mysql123
       configuration:
-          pool-name: HikariCP2
-          minimum-idle: 5
-          idle-timeout: 180000
-          maximum-pool-size: 200
-          max-lifetime: 1800000
-          connection-timeout: 3000
+        pool-name: HikariCP2
+        minimum-idle: 5
+        idle-timeout: 180000
+        maximum-pool-size: 200
+        max-lifetime: 1800000
+        connection-timeout: 3000
+mybatis:
+  # mybatis配置文件位置
+  config-location: classpath:mybatis/mybatis-config.xml
+# mybatis sql日志
+logging:
+  level:
+    com:
+      example:
+        mybatis:
+          mapper: debug
