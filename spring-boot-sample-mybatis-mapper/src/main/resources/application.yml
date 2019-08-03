@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: spring-boot-sample-mybatis-mapper
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_db?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    username: root
+    password: mysql123
+mybatis:
+  # mybatis配置文件位置
+  config-location: classpath:mybatis/mybatis-config.xml
+  # mapper映射文件位置
+  mapper-locations: classpath:mybatis/mappers/*.xml
+  # 别名包
+  type-aliases-package: com.example.mybatis.entity
+mapper:
+  mappers:
+    - tk.mybatis.mapper.common.Mapper
+    - tk.mybatis.mapper.common.MySqlMapper
+  # 取回主键的方式 MYSQL: SELECT LAST_INSERT_ID()
+  identity: MYSQL
+  # 还可设置为 mapper.before = false
+  order: AFTER
+  # insertSelective 和 updateByPrimaryKeySelective 中，是否判断字符串类型 !=''
+  not-empty: true
+  # 实体和表转换时的默认规则: 驼峰转下划线小写形式
+  style: camelhumpAndLowercase
+  # 是否支持（getter 和 setter）在方法上使用注解，默认false
+  enableMethodAnnotation: false
+  # 枚举类型当成基本类型对待需要自己配置好 typeHandler
+  enumAsSimpleType: false
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+# mybatis sql日志
+logging:
+  level:
+    com:
+      example:
+        mybatis:
+          mapper: debug
