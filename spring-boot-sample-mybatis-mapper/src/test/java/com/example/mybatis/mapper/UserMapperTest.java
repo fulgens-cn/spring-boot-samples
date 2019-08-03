@@ -10,6 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import tk.mybatis.mapper.entity.Example;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -20,6 +22,23 @@ public class UserMapperTest {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Test
+    public void testInsertSelective() {
+        User user = new User();
+        user.setUsername("ccmouse");
+        user.setPassword("123456789");
+        assertTrue(userMapper.insertSelective(user) == 1);
+    }
+
+    @Test
+    public void testUpdateByExample() {
+        Example example = new Example(User.class);
+        example.createCriteria().andEqualTo("username", "ccmouse");
+        User user = new User();
+        user.setPhone("18312345678");
+        assertTrue(userMapper.updateByExampleSelective(user, example) > 0);
+    }
 
     @Test
     public void testSelectByExample() {
