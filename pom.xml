@@ -43,5 +43,6 @@
         <module>spring-boot-sample-mybatis-xml-multidatasource</module>
         <module>spring-boot-sample-mybatis-annotation-multidatasource</module>
         <module>spring-boot-sample-mybatis-mapper</module>
+        <module>spring-boot-sample-mybatis-plus</module>
     </modules>
 </project>
