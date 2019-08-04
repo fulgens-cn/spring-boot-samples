@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-boot-sample-mail
+  mail:
+    host: smtp.qq.com
+    username: xxx@qq.com
+    # qq邮箱授权码获取 https://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+    password:
+    protocol: smtp
+    default-encoding: UTF-8
+    properties:
+      smtp:
+        auth: true
+        port: 465
+        starttls:
+          enabled: true
+          required: true
+        ssl:
+          enabled: true
+application:
+  mail:
+    from: xxx@qq.com
+    to: xxx@gmail.com
